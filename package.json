@@ -9,7 +9,11 @@
     "start": "npm run dev",
     "build": "node build/build.js"
   },
+  "peerDependencies": {
+    "echarts": ">3.8.3"
+  },
   "dependencies": {
+    "echarts-amap": "^1.0.0-rc.6",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

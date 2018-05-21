@@ -3,20 +3,20 @@
     <div class="chart-item" v-for="(item, index) in chartData" :key="index">
       <div class="chart-part">
         <h3>{{ item.name }}</h3>
-        <!-- <component
+        <component
           :is="`kr-${innerType}`"
           :data="item.data"
           :setting="item.setting">
-        </component>  -->
+        </component> 
       </div>
       <div class="code-view">
         <p>数据格式</p>
         <div class="data-code">
-
+          <code-section :content="item.data" json></code-section>
         </div>
         <p>配置项</p>
         <div class="setting-code">
-
+          <code-section :content="item.settings" json></code-section>
         </div>
       </div>
     </div>
@@ -25,6 +25,9 @@
 
 <script>
 import KrBar from '../../src/packages/bar';
+import KrHistogram from '../../src/packages/histogram';
+
+import CodeSection from '../components/code-section';
 import CHART_DATA from '../data';
 
 export default {
@@ -52,7 +55,9 @@ export default {
     }
   },
   components: {
-    // KrBar
+    CodeSection,
+    KrBar,
+    KrHistogram
   }
 }
 </script>

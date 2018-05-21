@@ -7,7 +7,7 @@
       <span class="main-title">{{ title }}</span>
       <ul>
         <li v-for="(item, index) in menu" :key="index">
-          <router-link exact :to="item.url">{{ item.name }}</router-link>
+          <router-link  :to="{name: '演示图表', params: {type: item.type}}">{{ item.name }}</router-link>
         </li>
       </ul>
     </div>
@@ -21,12 +21,13 @@ const routerInfo = {
   '图表': Object.keys(chartData).map(key => {
     return {
       name: chartData[key].name,
-      url: `chart/${chartData[key].type}`
+      url: `chart/${chartData[key].type}`,
+      type: chartData[key].type
     }
   }),
   '其他': [
     {
-      name: 'others',
+      name: '',
       url: ''
     }
   ]

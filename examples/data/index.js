@@ -1,5 +1,7 @@
-import bar from './bar'
+import bar from './bar';
+import histogram from './histogram';
 
 export default {
-  bar
+  histogram,
+  bar,
 }

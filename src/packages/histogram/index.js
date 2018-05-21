@@ -1,13 +1,12 @@
 import echarts from '../../echarts-base'
 import 'echarts/lib/chart/bar'
-import { bar } from './main'
+import { histogram } from '../bar/main'
 import Core from '../../core'
-
 export default {
-  name: 'KrBar',
+  name: 'KrHistogram',
   mixins: [Core],
   created () {
-    this.chartHandler = bar
+    this.chartHandler = histogram
     this.echartsLib = echarts
   }
 }

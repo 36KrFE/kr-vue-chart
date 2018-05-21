@@ -1,9 +1,9 @@
 export default {
-  name: '横向柱状图',
-  type: 'bar',
+  name: '柱状图',
+  type: 'histogram',
   data: [
     {
-      name: '简单条形图',
+      name: '简单柱状图',
       data: {
         columns: ['日期', '余额', '年龄'],
         rows: [
@@ -18,24 +18,104 @@ export default {
       settings: {}
     },
     {
-      name: '排序条形图',
+      name: '数值轴柱状图',
+      data: {
+        columns: ['日期', '余额', '年龄'],
+        rows: [
+          { '日期': 10, '余额': 123, '年龄': 3 },
+          { '日期': 20, '余额': 1223, '年龄': 6 },
+          { '日期': 30, '余额': 2123, '年龄': 9 },
+          { '日期': 40, '余额': 4123, '年龄': 12 },
+          { '日期': 50, '余额': 3123, '年龄': 15 },
+          { '日期': 60, '余额': 7123, '年龄': 20 }
+        ]
+      },
+      settings: {
+        xAxisType: 'value'
+      }
+    },
+    {
+      name: '柱状图+折线图',
       data: {
         columns: ['日期', '余额', '年龄'],
         rows: [
           { '日期': '1-1', '余额': 123, '年龄': 3 },
           { '日期': '1-2', '余额': 1223, '年龄': 6 },
-          { '日期': '1-3', '余额': 2123, '年龄': 90 },
+          { '日期': '1-3', '余额': 2123, '年龄': 9 },
           { '日期': '1-4', '余额': 4123, '年龄': 12 },
           { '日期': '1-5', '余额': 3123, '年龄': 15 },
           { '日期': '1-6', '余额': 7123, '年龄': 20 }
         ]
       },
       settings: {
-        metrics: ['年龄'],
-        dataOrder: {
-          label: '年龄',
-          order: 'desc'
+        axisSite: {
+          right: ['年龄']
+        },
+        showLine: ['年龄']
+      }
+    },
+    {
+      name: '默认在柱子上显示数据',
+      data: {
+        columns: ['日期', '余额', '年龄'],
+        rows: [
+          { '日期': '1-1', '余额': 123, '年龄': 3 },
+          { '日期': '1-2', '余额': 1223, '年龄': 6 },
+          { '日期': '1-3', '余额': 2123, '年龄': 9 },
+          { '日期': '1-4', '余额': 4123, '年龄': 12 },
+          { '日期': '1-5', '余额': 3123, '年龄': 15 },
+          { '日期': '1-6', '余额': 7123, '年龄': 20 }
+        ]
+      },
+      settings: {
+        label: {
+          normal: {
+            show: true,
+            position: 'top'
+          }
         }
+      }
+    },
+    {
+      name: '设置指标维度名称',
+      data: {
+        columns: ['date', 'resume', 'uplevel'],
+        rows: [
+          { 'date': '1-1', 'resume': 123, 'uplevel': 0.3 },
+          { 'date': '1-2', 'resume': 1223, 'uplevel': 0.6 },
+          { 'date': '1-3', 'resume': 2123, 'uplevel': 0.9 },
+          { 'date': '1-4', 'resume': 4123, 'uplevel': 0.12 },
+          { 'date': '1-5', 'resume': 3123, 'uplevel': 0.15 },
+          { 'date': '1-6', 'resume': 7123, 'uplevel': 0.2 }
+        ]
+      },
+      settings: {
+        labelMap: {
+          date: '日期',
+          resume: '余额',
+          uplevel: '增长率'
+        },
+        yAxisType: ['KMB', 'percent'],
+        axisSite: {
+          right: ['uplevel']
+        }
+      }
+    },
+    {
+      name: '坐标轴值域配置',
+      data: {
+        columns: ['日期', '余额', '年龄'],
+        rows: [
+          { '日期': '1-1', '余额': 1232, '年龄': 3 },
+          { '日期': '1-2', '余额': 1223, '年龄': 6 },
+          { '日期': '1-3', '余额': 2123, '年龄': 9 },
+          { '日期': '1-4', '余额': 4123, '年龄': 12 },
+          { '日期': '1-5', '余额': 3123, '年龄': 15 },
+          { '日期': '1-6', '余额': 7123, '年龄': 20 }
+        ]
+      },
+      settings: {
+        min: [1000]
       }
     },
     {
@@ -52,7 +132,7 @@ export default {
         ]
       },
       settings: {
-        xAxisType: ['percent'],
+        yAxisType: ['percent'],
         digit: 4
       }
     },
@@ -70,10 +150,10 @@ export default {
         ]
       },
       settings: {
-        xAxisType: ['KMB', 'percent'],
-        xAxisName: ['余额', '年龄'],
+        yAxisType: ['KMB', 'percent'],
+        yAxisName: ['余额', '年龄'],
         axisSite: {
-          top: ['年龄']
+          right: ['年龄']
         }
       }
     },
@@ -92,8 +172,8 @@ export default {
       },
       settings: {
         axisSite: {
-          top: ['a'],
-          bottom: ['b']
+          left: ['a'],
+          right: ['b']
         }
       }
     },
@@ -116,7 +196,7 @@ export default {
       }
     },
     {
-      name: '堆叠条形图',
+      name: '堆叠柱状图',
       data: {
         columns: ['日期', '余额', '年龄'],
         rows: [

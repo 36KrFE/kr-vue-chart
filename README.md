@@ -1,6 +1,3 @@
-# kr-vue-chart
-A library of chart for vue build with echarts or d3.js !!!
-
 # [kr-vue-chart](https://github.com/36KrFE/kr-vue-chart/)
 
 [![Version](https://img.shields.io/npm/v/x-vui.svg)](https://www.npmjs.com/package/kr-vue-chart) [![Downloads](http://img.shields.io/npm/dm/x-vui.svg)](https://www.npmjs.com/package/kr-vue-chart) [![License](https://img.shields.io/npm/l/x-vui.svg?style=flat)](https://opensource.org/licenses/MIT) [![TravisCI](https://travis-ci.org/Brickies/vui.svg)](https://travis-ci.org/Brickies/vui)
@@ -18,9 +15,9 @@ npm i kr-vue-chart -S
 ### CDN
 ```html
 <!-- 引入样式 -->
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="...">
 <!-- 引入组件库 -->
-<script src=""></script>
+<script src="..."></script>
 ```
 
 ## 快速开始

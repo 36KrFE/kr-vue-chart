@@ -1,8 +1,8 @@
 {
   "name": "kr-vue-chart",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A library of chart for vue build with echarts or d3.js !!!",
-  "main": "lib/krVueChart.js",
+  "main": "lib/krVueChart.min.js",
   "files": [
     "lib",
     "src"
@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "webpack --progress --hide-modules --config build/webpack.build.js && rimraf dist && node build/build.js"
+    "build": "rimraf dist && node build/build.js",
+    "build:publish": "webpack --progress --hide-modules --config build/webpack.build.js"
   },
   "peerDependencies": {
     "echarts": ">3.8.3"

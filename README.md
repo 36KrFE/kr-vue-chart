@@ -10,7 +10,7 @@
 ### npm 安装
 
 ```shell
-npm i kr-vue-chart -D
+npm i kr-vue-chart -S
 ```
 
 ### CDN

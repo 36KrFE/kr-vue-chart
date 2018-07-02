@@ -1,7 +1,7 @@
 import KrBar from './packages/bar'
 import KrHistogram from './packages/histogram'
-// import KrLine from './packages/line'
-// import KrPie from './packages/pie'
+import KrLine from './packages/line'
+import KrPie from './packages/pie'
 // import KrRing from './packages/ring'
 // import KrWaterfall from './packages/waterfall'
 // import KrFunnel from './packages/funnel'
@@ -13,15 +13,15 @@ import KrHistogram from './packages/histogram'
 // import KrSankey from './packages/sankey'
 // import KrHeatmap from './packages/heatmap'
 // import KrScatter from './packages/scatter'
-// import KrCandle from './packages/candle'
+import KrCandle from './packages/candle'
 // import KrGauge from './packages/gauge'
 // import KrTree from './packages/tree'
 
 const components = [
   KrBar,
   KrHistogram,
-  // KrLine,
-  // KrPie,
+  KrLine,
+  KrPie,
   // KrRing,
   // KrWaterfall,
   // KrFunnel,
@@ -33,7 +33,7 @@ const components = [
   // KrSankey,
   // KrHeatmap,
   // KrScatter,
-  // KrCandle,
+  KrCandle,
   // KrGauge,
   // KrTree
 ]
@@ -48,8 +48,8 @@ export default {
   KrBar,
   KrHistogram,
   // KrRing,
-  // KrLine,
-  // KrPie,
+  KrLine,
+  KrPie,
   // KrWaterfall,
   // KrFunnel,
   // KrRadar,
@@ -60,7 +60,7 @@ export default {
   // KrSankey,
   // KrHeatmap,
   // KrScatter,
-  // KrCandle,
+  KrCandle,
   // KrGauge,
   // KrTree,
   install

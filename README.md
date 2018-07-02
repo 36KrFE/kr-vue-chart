@@ -1,3 +1,4 @@
+
 # [kr-vue-chart](https://github.com/36KrFE/kr-vue-chart/)
 
 [![Version](https://img.shields.io/npm/v/x-vui.svg)](https://www.npmjs.com/package/kr-vue-chart) [![Downloads](http://img.shields.io/npm/dm/x-vui.svg)](https://www.npmjs.com/package/kr-vue-chart) [![License](https://img.shields.io/npm/l/x-vui.svg?style=flat)](https://opensource.org/licenses/MIT) [![TravisCI](https://travis-ci.org/Brickies/vui.svg)](https://travis-ci.org/Brickies/vui)
@@ -9,7 +10,7 @@
 ### npm 安装
 
 ```shell
-npm i kr-vue-chart -S
+npm i kr-vue-chart -D
 ```
 
 ### CDN
@@ -68,4 +69,4 @@ Vue.prototype.*** = ***
 
 ## 特别感谢
 
-该组件库部分灵感来自于 [`element`](https://github.com/ElemeFE/element) 和 [`echarts`](https://github.com/apache/incubator-echarts)，这里感谢 [`36Kr前端团队`](https://github.com/36KrFE) 对开源项目的贡献，手动点波赞 👍 
+该组件库部分灵感来自于 [`v-charts`](https://github.com/ElemeFE/v-charts) 和 [`echarts`](https://github.com/apache/incubator-echarts)，这里感谢 [`36Kr前端团队`](https://github.com/36KrFE) 对开源项目的贡献，手动点波赞 👍 

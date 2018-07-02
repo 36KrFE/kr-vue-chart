@@ -1,9 +1,9 @@
 module.exports = {
   KrBar: { src: 'src/packages/bar/index.js', dist: 'lib/bar' },
   KrHistogram: { src: 'src/packages/histogram/index.js', dist: 'lib/histogram' },
+  KrLine: { src: 'src/packages/line/index.js', dist: 'lib/line' },
+  KrPie: { src: 'src/packages/pie/index.js', dist: 'lib/pie' },
   // KrFunnel: { src: 'src/packages/funnel/index.js', dist: 'lib/funnel' },
-  // KrLine: { src: 'src/packages/line/index.js', dist: 'lib/line' },
-  // KrPie: { src: 'src/packages/pie/index.js', dist: 'lib/pie' },
   // KrRing: { src: 'src/packages/ring/index.js', dist: 'lib/ring' },
   // KrRadar: { src: 'src/packages/radar/index.js', dist: 'lib/radar' },
   // KrWaterfall: { src: 'src/packages/waterfall/index.js', dist: 'lib/waterfall' },
@@ -15,7 +15,7 @@ module.exports = {
   // KrSankey: { src: 'src/packages/sankey/index.js', dist: 'lib/sankey' },
   // Krheatmap: { src: 'src/packages/heatmap/index.js', dist: 'lib/heatmap' },
   // KrScatter: { src: 'src/packages/scatter/index.js', dist: 'lib/scatter' },
-  // KrCandle: { src: 'src/packages/candle/index.js', dist: 'lib/candle' },
+  KrCandle: { src: 'src/packages/candle/index.js', dist: 'lib/candle' },
   // KrGauge: { src: 'src/packages/gauge/index.js', dist: 'lib/gauge' },
   // KrTree: { src: 'src/packages/tree/index.js', dist: 'lib/tree' }
 }

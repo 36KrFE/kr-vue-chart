@@ -5,6 +5,9 @@ import router from './router'
 import 'normalize.css';
 import './style/index.less';
 
+// 全局引入
+import krChart from '../src/index.es.js';
+Vue.use(krChart);
 
 Vue.config.productionTip = false
 

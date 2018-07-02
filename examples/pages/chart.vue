@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import KrBar from '../../src/packages/bar';
-import KrHistogram from '../../src/packages/histogram';
+// import KrBar from '../../src/packages/bar';
+// import KrHistogram from '../../src/packages/histogram';
 
 import CodeSection from '../components/code-section';
 import CHART_DATA from '../data';
@@ -56,8 +56,8 @@ export default {
   },
   components: {
     CodeSection,
-    KrBar,
-    KrHistogram
+    // KrBar,
+    // KrHistogram
   }
 }
 </script>

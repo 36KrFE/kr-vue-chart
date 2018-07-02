@@ -44,7 +44,7 @@ function install (Vue, _) {
   })
 }
 
-export {
+export default {
   KrBar,
   KrHistogram,
   // KrRing,

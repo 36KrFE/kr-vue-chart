@@ -6,8 +6,8 @@ import 'normalize.css';
 import './style/index.less';
 
 // 全局引入
-import krChart from '../src/index.es.js';
-Vue.use(krChart);
+import krVueChart from '../src/index.es.js';
+Vue.use(krVueChart);
 
 Vue.config.productionTip = false
 

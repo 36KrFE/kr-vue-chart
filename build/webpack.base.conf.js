@@ -18,7 +18,7 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    krChart: './examples/main.js'
+    krVueChart: './examples/main.js'
   },
   output: {
     path: path.join(__dirname, '../dist'),
@@ -133,7 +133,7 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      chunks: ['krChart'],
+      chunks: ['krVueChart'],
       filename: 'index.html',
       template: 'examples/index.html',
       inject: true

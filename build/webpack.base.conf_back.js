@@ -13,7 +13,7 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    krChart: './examples/main.js'
+    krVueChart: './examples/main.js'
   },
   output: {
     path: config.build.assetsRoot,
